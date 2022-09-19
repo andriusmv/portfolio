@@ -4,9 +4,9 @@ export default {
   titleSuffix: ' – Nextra',
   logo: (
     <>
-      <span className="mr-2 font-extrabold hidden md:inline">Nextra</span>
+      <span className="mr-2 font-extrabold hidden md:inline">Andrés Moreno Vásquez</span>
       <span className="text-gray-600 font-normal hidden md:inline">
-        The Next.js Static Site Generator
+        portfolio
       </span>
     </>
   ),
@@ -62,6 +62,6 @@ export default {
   nextLinks: true,
   footer: true,
   footerEditLink: 'Edit this page on GitHub',
-  footerText: <>MIT {new Date().getFullYear()} © Nextra.</>,
+  footerText: <>This year is {new Date().getFullYear()}.</>,
   unstable_faviconGlyph: '👋',
 }
