@@ -1,7 +1,7 @@
 export default {
   github: 'https://github.com/andriusmv',
   docsRepositoryBase: 'https://github.com/andriusmv/portfolio/blob/master',
-  titleSuffix: ' – Nextra',
+  titleSuffix: ' – Portfolio',
   logo: (
     <>
       <span className="mr-2 font-extrabold hidden md:inline">Andrés Moreno Vásquez</span>
