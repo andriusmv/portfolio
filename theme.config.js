@@ -62,6 +62,6 @@ export default {
   nextLinks: true,
   footer: true,
   footerEditLink: 'Edit this page on GitHub',
-  footerText: <>MIT {new Date().getFullYear()}© Nextra.</>,
+  footerText: <>Andrés Moreno Vásquez {new Date().getFullYear()} - andresmorenovasquez@outlook.com.</>,
   unstable_faviconGlyph: '👋',
 }

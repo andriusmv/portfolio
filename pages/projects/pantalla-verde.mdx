@@ -23,3 +23,7 @@ I built Pantalla Verde as a side project and I am very proud of testing differen
 User auth is handled in a simple PostgreSQL database. I use Stripe webhooks to manage subscription payments to the platform. Is written mostly in Typescript (89%) and deployed in Vercel.
 <br />
 <Image src="/pantallaverdetriad.png" width={1215} height={850} />
+<br />
+And this is a basic db schema I came up with: users can belong to many organizations and organizations can access have multiple plans (Free, Pro, etc). I followed David Sacks advice that average users (consumers) have higher churn rates (in SaaS), whereas enterprise (businesses) have smaller churn rates. Similar to Figma (r.i.p.) or Miro app, where you can user for free as an individual and later on you would ask your employer to upgrade to a paid plan for the whole company (bottom-up approach).
+<br />
+<Image src="/pvschema1.png" width={1215} height={500} />
