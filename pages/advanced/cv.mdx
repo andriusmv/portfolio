@@ -1,3 +1,28 @@
+import { useSSG } from 'nextra/ssg'
+
+export const getStaticProps = ({ params }) => {
+  return fetch(`https://api.github.com/repos/andriusmv/portfolio`)
+    .then((res) => res.json())
+    .then((repo) => ({
+      props: {
+        // We add an `ssg` field to the page props,
+        // which will be provided to the Nextra `useSSG` hook.
+        ssg: {
+          stars: repo.stargazers_count,
+        },
+      },
+      // The page will be considered as stale and regenerated every 60 seconds.
+      revalidate: 60,
+    }))
+}
+
+export const Stars = () => {
+  // Get the data from SSG, and render it as a component.
+  const { stars } = useSSG()
+  return <strong>{stars}</strong>
+}
+
+
 ### Professional resume or CV
 
 📃 Please find my professional resume here: [CV Andrés Moreno Vásquez 2022](https://drive.google.com/file/d/1kjrBKuBZm4h2tA6QsCx2gavo6UdiDULc/view?usp=sharing)
@@ -6,4 +31,8 @@
 
 👤 You can find me on LikedIn here, where I regularly post about GIS and web dev: [LinkedIn profile](https://www.linkedin.com/in/andresmorenovasquez/recent-activity/shares/)
 
-💻 GitHub profile [GitHub](https://github.com/andriusmv)
+💻 GitHub profile [GitHub](https://github.com/andriusmv) 
+
+<div className="p-4 border border-gray-200 dark:border-gray-900 rounded mt-6">
+  This portfolio has <Stars /> stars on GitHub! 😥 go ahead and [star it](https://github.com/andriusmv/portfolio)! 
+</div>
