@@ -1,3 +1,39 @@
+import { useSSG } from 'nextra/ssg'
+
+export const getStaticProps = ({ params }) => {
+  return fetch(`https://api.github.com/repos/andriusmv/portfolio`)
+    .then((res) => res.json())
+    .then((repo) => ({
+      props: {
+        // We add an `ssg` field to the page props,
+        // which will be provided to the Nextra `useSSG` hook.
+        ssg: {
+          stars: repo.stargazers_count,
+        },
+      },
+      // The page will be considered as stale and regenerated every 60 seconds.
+      revalidate: 60,
+    }))
+}
+
+export const Stars = () => {
+  // Get the data from SSG, and render it as a component.
+  const { stars } = useSSG()
+  return <strong>{stars}</strong>
+}
+
 # Contact me
 
 You can reach me at [this email adress](mailto:andresmorenovasquez@outlook.com)
+
+### LinkedIn
+
+👤 You can find me on LikedIn here, where I regularly post about GIS and web dev: [LinkedIn profile](https://www.linkedin.com/in/andresmorenovasquez/recent-activity/shares/)
+
+### GitHub
+
+💻 GitHub profile [GitHub](https://github.com/andriusmv) 
+
+<div className="p-4 border border-gray-200 dark:border-gray-900 rounded mt-6">
+  This portfolio has <Stars /> stars on GitHub! 😥 go ahead and [star it](https://github.com/andriusmv/portfolio)! 
+</div>
