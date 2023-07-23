@@ -3,4 +3,4 @@
 ###### You can reach me at:
 Email: [andresmorenovasquez@outlook.com](mailton:andres.moreno.vasquez@outlook.com)
 LinkedIn: [LinkedIn](https://www.linkedin.com/in/andresmorenovasquez/)
-Twitter: [@andriusmv1](https://twitter.com/andriusmv1)
+Twitter: [@amorenva](https://twitter.com/amorenva)
