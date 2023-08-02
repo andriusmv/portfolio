@@ -12,6 +12,7 @@ export default {
   ),
   head: (
     <>
+      <meta name="title" content="Andrés Moreno Portfolio" />
       <meta name="msapplication-TileColor" content="#ffffff" />
       <meta name="theme-color" content="#ffffff" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
