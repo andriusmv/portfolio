@@ -1,10 +1,10 @@
 {
   "location-intelligence": "Location Intelligence",
-  "pantalla-verde": "Pantalla Verde",
-  "i18n": "Next.js i18n",
   "gis-projects": "GIS projects",
-  "themes": "Themes",
   "VR-AR": "VR/AR",
   "threejs": "3D models Threejs",
   "vlogging-videos": "Vlogging videos"
+  "pantalla-verde": "Pantalla Verde",
+  "i18n": "Next.js i18n",
+  "themes": "Themes",
 }
