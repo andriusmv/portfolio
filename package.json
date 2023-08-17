@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "next",
     "start": "next start",
-    "build": "next build"
+    "build": "next build",
   "engines": {
     "node": ">=0.10.3 <18"
   }
