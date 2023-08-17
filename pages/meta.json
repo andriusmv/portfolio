@@ -1,6 +1,10 @@
 {
-  "index": "Intro",
-  "about-me": "About me",
+  "index": Intro {
+    "title": "Andrés Moreno"
+  },
+  "about-me": "About me" {
+    "title": "Andrés Moreno"
+},
   "projects": "Projects",
   "advanced": "Contact"
 }
