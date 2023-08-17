@@ -7,6 +7,9 @@
     "dev": "next",
     "start": "next start",
     "build": "next build"
+  "engines": {
+    "node": ">=0.10.3 <18"
+  }
   },
   "author": "Shu Ding",
   "license": "MIT",
