@@ -1,10 +1,12 @@
 export default {
   github: 'https://github.com/andriusmv',
   docsRepositoryBase: 'https://github.com/andriusmv/portfolio/blob/master',
-  titleSuffix: ' Portfolio',
+  titleSuffix: 'Portfolio',
   logo: (
     <>
-      <span className="mr-2 font-extrabold hidden md:inline">Andrés Moreno Vásquez</span>
+      <span className="mr-2 font-extrabold hidden md:inline">
+        Andrés Moreno Vásquez
+      </span>
       <span className="text-gray-600 font-normal hidden md:inline">
         portfolio
       </span>
@@ -12,6 +14,7 @@ export default {
   ),
   head: (
     <>
+      <title>AndrésMoreno | Portfolio</title>
       <meta name="title" content="Andrés Moreno Portfolio" />
       <meta name="msapplication-TileColor" content="#ffffff" />
       <meta name="theme-color" content="#ffffff" />
@@ -20,11 +23,11 @@ export default {
       <meta name="description" content="Andres Moreno Vasquez Portfolio" />
       <meta name="og:description" content="Andres Moreno Vasquez Portfolio" />
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:image" content="https://nextra.vercel.app/og.png" />
-      <meta name="twitter:site:domain" content="nextra.vercel.app" />
-      <meta name="twitter:url" content="https://nextra.vercel.app" />
+      <meta name="twitter:image" content="https://i.imgur.com/6Tb6vMd.jpg" />
+      <meta name="twitter:site:domain" content="andresmoreno.vercel.app" />
+      <meta name="twitter:url" content="https://andresmoreno.vercel.app" />
       <meta name="og:title" content="Andres Moreno Vasquez Portfolio" />
-      <meta name="og:image" content="https://nextra.vercel.app/og.png" />
+      <meta name="og:image" content="https://i.imgur.com/6Tb6vMd.jpg" />
       <meta name="apple-mobile-web-app-title" content="Portfolio" />
       <link
         rel="apple-touch-icon"
@@ -63,6 +66,11 @@ export default {
   nextLinks: true,
   footer: true,
   footerEditLink: 'Edit this page on GitHub',
-  footerText: <>Andrés Moreno Vásquez {new Date().getFullYear()} - andresmorenovasquez@outlook.com.</>,
+  footerText: (
+    <>
+      Andrés Moreno Vásquez {new Date().getFullYear()} -
+      andresmorenovasquez@outlook.com
+    </>
+  ),
   unstable_faviconGlyph: '👋',
 }
